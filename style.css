@@ -11,13 +11,8 @@ body {
   line-height: 1.5;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
-
 nav {
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,13 +36,156 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+.nav-link{
+  padding: 6px;
+  display: inline;
+}
+
+.nav-link:hover{
+  cursor: pointer;
+}
+
+
+.project-list{
+  padding: 0;
+}
+.portfolio-link-wrapper{
+  display: inline;
+}
+
+ul li:hover ul {
+  position: absolute;
+  display: block;
+}
+
+ul li ul li a {display:block !important;} 
+.active{
+  background-color: #1c4c58;
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+.hover{
+    -webkit-transform: translate3d(20px,0,0); 
+    transform: translate3d(20px,0,0); 
+}
+
+.intro{
+  font-size: 18px;
+}
 
 .logo{
   margin: 30px;
   width: 100px;
 }
 
+
 .footer-logo{
   display: inline-block;
-  width: 60px;
+  width: 50px;
+}
+
+.footer-logo:active{
+  transform: translate3d(10px,0,0);
+  transform: scale(1.2);
+  transition: transform 425ms cubic-bezier(.05,.65,.18,1); 
+}
+
+.footer-logo:hover{
+  transform: translate3d(10px,0,0);
+  transform: scale(1.2);
+  transition: transform 425ms cubic-bezier(.05,.65,.18,1); 
+}
+
+.about-me-paragraph{
+  max-width: 700px;
+  margin: auto;
+}
+
+
+
+
+.contact-list ul{
+  list-style: none;
+}
+
+/* NAV BAR */
+nav {background-color: #203c50;}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.nav-list{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {display: inline-block;}
+.nav-list li:hover {background: rgb(71, 0, 0);}
+.nav-list li:hover ul {display: block;}
+.nav-list li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+.nav-list li ul li { 
+  background: #555; 
+  display: block; 
+}
+.nav-list li ul li a {display:block !important;} 
+.nav-list li ul li:hover {background: #666;}
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width:700px){
+  .contact-list{
+    padding: 0;
+    bottom: 15px;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: 0;
+  }
+
+  .contact-list ul li{
+    text-align: left;
+    margin: 20px;
+  }
+  .contact-list ul{
+    padding: 0;
+    display: inline-flex;
+  }
+  
+
+
+}
+
+
+/* CONTACT ICONS */
+
+@media only screen and (min-width:701px){
+.contact-list{
+  z-index: 1001;
+  position: fixed;
+  left: 0;
+  top: calc(11% - (220px / 2));
+  width: 55px;
+  height: 220px;
+}
+
+.contact-list ul{
+  padding-left: 15px;
+}
+
+.contact-list ul li p{
+  font-size: 16px;
+  width: 100px;
+  text-align: left;
+}
 }

@@ -6,18 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">      
+    </script>
 </head>
 
 <body>
-  <nav role="navigation"></nav>
+  <nav role="navigation">
+
+        <a class="nav-link js-about-link" >About</a>
+  <ul class="nav-list">
+    <li>
+      <a class="nav-link js-portfolio-link">Portfolio</a>
+      <ul class="project-list">
+        <li><a class="js-budget-browse" href="#">Budget Browse</a></li>
+        <li><a class="js-hooisit" href="#">HooIsIt</a></li>
+        <li><a class="js-unicart" href="#">UniCart</a></li>
+      </ul>
+    </li>
+  </ul>
+  <a class="nav-link js-contact-link" >Contact</a>
+  </nav>
   <main role="main">
     <header role="banner">
-      <h1>You Made It! Call me Vega :)</h1>
+      <h1 class="intro">Hello, my name is Vega, Full Stack Web Developer living in Atlanta, GA.</h1>
     </header>
 
-    <section>
+    <section class="about-section">
       <h3>About Me</h3>
-      <p>I graduated from Thinkful’s Full Stack Web Development Bootcamp and have a Bachelor’s Degree in Game Design
+      <p class="about-me-paragraph">I graduated from Thinkful’s Full Stack Web Development Bootcamp and have a Bachelor’s Degree in Game Design
         from Full Sail University.
         I fulfilled my desire for adventure by going to military school, the Army Reserves, and worked in law
         enforecement for 3 years. I enjoy
@@ -26,7 +45,8 @@
         into experiences that others can enjoy.</p>
     </section>
 
-    <section>
+    <section class="budget-browse-section">
+      <div class ="project-container">
       <h3>Budget Browse</h3>
       <a class="project-repo-link" href="https://github.com/J-Vega/Budget-Browse" target="_blank">Repo</a>
       <a class="project-demo-link" href="https://j-vega.github.io/Budget-Browse/" target="_blank">Live Demo</a>
@@ -34,7 +54,7 @@
         listings
         with Best Buy's API.</p>
       <h4>Tech Utilized:</h4>
-      <ul>
+      <ul class="tech-list">
         <li>
           HTML5
         </li>
@@ -45,16 +65,18 @@
           Vanilla CSS
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
+    <section class="hooisit-section">
+    <div class ="project-container">
       <h3>HooIsIt</h3>
       <a href="https://github.com/J-Vega/HooIsIt" target="_blank">Repo</a>
       <a href="https://stormy-tundra-36765.herokuapp.com/" target="_blank">Live Demo</a>
       <p class="project-description">This site allows you to search suspicious phone numbers to avoid contact with
         telemarketers, scammers, and other unwanted phone calls.</p>
       <h4>Tech Utilized:</h4>
-      <ul>
+      <ul class="tech-list">
         <li>
           Node.js
         </li>
@@ -80,9 +102,11 @@
           jQuery
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <section class="unicart-section">
+    <div class ="project-container">
       <h3>Unicart</h3>
       <a href="https://github.com/J-Vega/wishlist-app-client" target="_blank">Repo - Client</a>
       <a href="https://github.com/J-Vega/wishlist-app-api" target="_blank">Repo - API</a>
@@ -90,7 +114,7 @@
       <p class="project-description">Find product listings across multiple retailers to create and manage wishlists in
         one place.</p>
       <h4>Tech Utilized:</h4>
-      <ul>
+      <ul class="tech-list">
         <li>
           React
         </li>
@@ -122,9 +146,10 @@
           jQuery
         </li>
       </ul>
+    </div>
     </section>
 
-    <section>
+    <section class="contact-section">
       <h3>Get In Touch With Me Anytime!</h3>
       <a href="https://github.com/J-Vega" target="_blank">
         <img class="logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a>
@@ -133,17 +158,46 @@
       <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
         <img class="logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a>
     </section>
+
+
+    <div class="contact-list">
+        <ul>
+          <li><p>Contact Me</p></li>
+          <li><a href="https://github.com/J-Vega" target="_blank">
+            <img class="footer-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a></li>
+          <li><a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
+            <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+          <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top"></li>
+          <li><a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
+              <img class="footer-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a></li>
+        </ul>
+      </div>
+
+
+
   </main>
+
+
+
+
   <footer role="content-info">
 
-    © Jonathan Vega
-    <a href="https://github.com/J-Vega" target="_blank">
-      <img class="footer-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a>
-    <a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
-      <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
-    <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
-      <img class="footer-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a>
+    <!-- <div class="col-2">
+        <h3 class ="footer-name">© Jonathan Vega</h3>
+    </div>
+
+    <div class="col-2">
+        <a href="https://github.com/J-Vega" target="_blank">
+          <img class="footer-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a>
+        <a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
+          <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+        <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
+          <img class="footer-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a>
+    </div> -->
+
+    
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>
