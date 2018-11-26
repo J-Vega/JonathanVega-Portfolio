@@ -24,15 +24,12 @@ header {
   padding-top: 60px;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
+.section {
+  padding-top: 3%;
+  padding-bottom: 3%;
   background-color: #e5f0bf;
 }
 
-section:nth-child(even) {
-  background-color: #e5f0bf;
-}
 
 .nav-link{
   color: white;
