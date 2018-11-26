@@ -201,7 +201,9 @@ div a {
   font: 18px/1.6 Roboto,Helvetica,sans-serif;
 }
 .project-screenshot{
+  display: block;
   width: 300px;
+  margin: auto;
   background: linear-gradient(rgba(255,0,0,0.5), rgba(255,0,0,0.5))
 }
 
@@ -245,6 +247,7 @@ div a {
 
 .tech-list{
   padding: 0;
+  clear: both;
 }
 
 
