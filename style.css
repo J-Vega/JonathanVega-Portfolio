@@ -2,67 +2,90 @@
   box-sizing: border-box;
 }
 
+html{
+  background-color: #ffffe6;
+}
 body {
-  font-family: "Open Sans",
-  sans-serif; 
-  font-size: 20px;
-  color: #444;
+  font: 16px/1.6 Roboto,Helvetica,sans-serif;
+  font-weight: 300;
+  color: rgb(51, 51, 51);
   text-align: center;
   line-height: 1.5;
 }
 
-nav {
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+
+
+.my-picture{
+  border-radius: 50%;
+  width: 100px;
 }
 
-
-
 header {
-  padding: 12% 0;
+  padding-top: 60px;
 }
 
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: #e5f0bf;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #e5f0bf;
 }
 
 .nav-link{
-  padding: 6px;
+  color: white;
+  padding: 15px;
   display: inline;
 }
 
 .nav-link:hover{
   cursor: pointer;
+  background-color: #2f616d
 }
 
+.project-description{
+  width: 500px;
+  margin: auto;
+}
 
 .project-list{
   padding: 0;
+}
+.project-list li a{
+  padding: 5px;
 }
 .portfolio-link-wrapper{
   display: inline;
 }
 
+.project-demo-link , .project-repo-link{
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #8c2020;
+}
+
+.project-demo-link:hover , .project-repo-link:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 ul li:hover ul {
   position: absolute;
+  top: 48px;
   display: block;
 }
 
 ul li ul li a {display:block !important;} 
 .active{
-  background-color: #1c4c58;
-  color: white;
-  border-bottom: 4px solid white;
+  background-color: #1c4c58 !important;
+  color: white !important;
+}
+
+.child-hover{
+  background: #2f616d;
 }
 
 .hover{
@@ -70,15 +93,16 @@ ul li ul li a {display:block !important;}
     transform: translate3d(20px,0,0); 
 }
 
-.intro{
-  font-size: 18px;
-}
 
+/* LOGOS AND ICONS */
 .logo{
   margin: 30px;
   width: 100px;
 }
 
+.font-sized-logo{
+  width: 14px;
+}
 
 .footer-logo{
   display: inline-block;
@@ -87,22 +111,30 @@ ul li ul li a {display:block !important;}
 
 .footer-logo:active{
   transform: translate3d(10px,0,0);
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 425ms cubic-bezier(.05,.65,.18,1); 
 }
 
 .footer-logo:hover{
   transform: translate3d(10px,0,0);
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 425ms cubic-bezier(.05,.65,.18,1); 
 }
 
-.about-me-paragraph{
-  max-width: 700px;
+.github-pic{
+  border: 1px solid black;
+  width: 50px;
+  border-radius: 4px;
+}
+
+.paragraph{
+  max-width: 500px;
   margin: auto;
 }
 
-
+.contact-section a{
+  text-decoration: none;
+}
 
 
 .contact-list ul{
@@ -110,11 +142,22 @@ ul li ul li a {display:block !important;}
 }
 
 /* NAV BAR */
-nav {background-color: #203c50;}
+
+nav {
+  background-color: #547b84;
+  padding: 12px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
 div a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 .nav-list{
@@ -123,21 +166,86 @@ div a {
   padding: 0;
 }
 .nav-list li {display: inline-block;}
-.nav-list li:hover {background: rgb(71, 0, 0);}
+
 .nav-list li:hover ul {display: block;}
 .nav-list li ul {
+  text-align: left;
   position: absolute;
-  width: 200px;
+  width: 150px;
   display: none;
 }
 .nav-list li ul li { 
-  background: #555; 
+  background: #e5f0bf; 
   display: block; 
 }
-.nav-list li ul li a {display:block !important;} 
-.nav-list li ul li:hover {background: #666;}
+.nav-list li ul li a {
+  text-decoration: none;
+  color: black;
+  display:block !important;
+} 
+.nav-list li ul li:hover {
+  color: black;
+  background: #c0d5da;
+}
+
+.nav-list li ul li:hover .js-portfolio-link{
+  
+  background: #2f616d;
+}
 
 
+/* TEXT */
+
+.intro{
+  
+  font: 18px/1.6 Roboto,Helvetica,sans-serif;
+}
+.project-screenshot{
+  width: 300px;
+  background: linear-gradient(rgba(255,0,0,0.5), rgba(255,0,0,0.5))
+}
+
+.screenshot-overlay:hover{
+  opacity: 1 !important;
+}
+
+.screenshot-overlay{
+  opacity: 0;
+  color: white;
+  background-color: rgba(6, 59, 103, 0.3);
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.tech-list li{
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  background-color: #203c50;
+  
+  border-radius: 5px;
+}
+.tech-list li a{
+  color: white;
+  padding: 5px;
+}
+.tech-list li a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.tech-list{
+  padding: 0;
+}
 
 
 
@@ -161,6 +269,10 @@ div a {
     padding: 0;
     display: inline-flex;
   }
+
+  .toggle-off-500px{
+    display: none;
+  }
   
 
 
@@ -173,8 +285,8 @@ div a {
 .contact-list{
   z-index: 1001;
   position: fixed;
-  left: 0;
-  top: calc(11% - (220px / 2));
+  left: 20px;/*calc(48% - (220px / 2));*/
+  top: calc(20% - (220px / 2));
   width: 55px;
   height: 220px;
 }

@@ -1,4 +1,13 @@
 
+function watchHover(){
+  $('.js-project-link').hover(event => {
+    $('.js-portfolio-link').addClass('child-hover');
+  });
+
+  $('.js-project-link').mouseleave(event => {
+    $('.js-portfolio-link').removeClass('child-hover');
+  });
+}
 
 function watchSubmit() {
   $('.js-about-link').click(event => 
@@ -109,4 +118,5 @@ function activateDefaultTab(){
 
 
 activateDefaultTab();
+$(watchHover);
 $(watchSubmit);
