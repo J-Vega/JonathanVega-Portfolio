@@ -99,17 +99,12 @@ function hideAllSections(){
 
 function activateDefaultTab(){
 	
-    $('.js-contact-link').removeClass("active");
-    $('.js-portfolio-link').removeClass("active");
-    $('.js-about-link').addClass("active");
-
+    deactivateAllTabs();
+  	hideAllSections();
    
+    $('.js-about-link').addClass("active");
+    
     $('.about-section').show(0);
-    $('.contact-section').hide(0);
-
-    $('.budget-browse-section').hide(0);
-    $('.hooisit-section').hide(0);
-    $('.unicart-section').hide(0);
 }
 
 
