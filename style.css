@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-html{
-  background-color: #ffffe6;
-}
 body {
   font: 16px/1.6 Roboto,Helvetica,sans-serif;
   font-weight: 300;
@@ -43,8 +40,9 @@ header {
 }
 
 .project-description{
-  width: 500px;
+  max-width: 500px;
   margin: auto;
+  padding: 12px;
 }
 
 .project-list{
@@ -149,6 +147,8 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+  box-shadow: 0px 2px 4px grey;
+
 }
 
 div a {
@@ -198,6 +198,7 @@ div a {
   font: 18px/1.6 Roboto,Helvetica,sans-serif;
 }
 .project-screenshot{
+  border: 2px solid black;
   display: block;
   width: 300px;
   margin: auto;
