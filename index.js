@@ -1,13 +1,13 @@
 
-function watchHover(){
-  $('.js-project-link').hover(event => {
-    $('.js-portfolio-link').addClass('child-hover');
-  });
+// function watchHover(){
+//   $('.js-project-link').hover(event => {
+//     $('.js-portfolio-link').addClass('child-hover');
+//   });
 
-  $('.js-project-link').mouseleave(event => {
-    $('.js-portfolio-link').removeClass('child-hover');
-  });
-}
+//   $('.js-project-link').mouseleave(event => {
+//     $('.js-portfolio-link').removeClass('child-hover');
+//   });
+// }
 
 function watchSubmit() {
   $('.js-about-link').click(event => 
@@ -36,6 +36,20 @@ function watchSubmit() {
     $('.contact-section').show(0);
 
     
+  });
+
+  $('.js-portfolio-link').click(event => 
+  {
+    deactivateAllTabs();
+    hideAllSections();
+   
+    
+    $('.js-portfolio-link').addClass("active");
+
+    
+    $('.project-section').show(0);
+    
+  
   });
 
   $('.js-budget-browse').click(event => 
@@ -111,12 +125,12 @@ function activateDefaultTab(){
     deactivateAllTabs();
   	hideAllSections();
    
-    $('.js-about-link').addClass("active");
+    $('.js-portfolio-link').addClass("active");
     
-    $('.about-section').show(0);
+    $('.project-section').show(0);
 }
 
 
 activateDefaultTab();
-$(watchHover);
+//$(watchHover);
 $(watchSubmit);
