@@ -335,6 +335,56 @@ div a {
     margin-left: 30px;
   }
 
+
+.row::after {
+  clear: both;
+}
+
+.col-2{
+  padding-top: 12px;
+  float: left;
+  width: 50%
+}
+
+.left-side{
+  border-right: 1px solid #203c50;
+}
+}
+
+
+@media only screen and (max-width:900px){
+
+  .project-description{
+    max-width: 350px;
+    margin:auto;
+  }
+
+
+  .contact-list{
+    padding: 0;
+    bottom: 15px;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: 0;
+  }
+
+  .contact-list ul li{
+    text-align: left;
+    margin: 20px;
+  }
+  .contact-list ul{
+    padding: 0;
+    display: inline-flex;
+  }
+
+  .toggle-off-500px{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:901px){
+
 .contact-list{
   z-index: 1001;
   position: fixed;
@@ -354,18 +404,4 @@ div a {
   text-align: left;
 }
 
-
-.row::after {
-  clear: both;
-}
-
-.col-2{
-  padding-top: 12px;
-  float: left;
-  width: 50%
-}
-
-.left-side{
-  border-right: 1px solid #203c50;
-}
 }
