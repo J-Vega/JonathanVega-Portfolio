@@ -132,20 +132,9 @@ ul li ul li a {display:block !important;}
   list-style: none;
 }
 
-/* NAV BAR */
 
-nav {
-  background-color: #547b84;
-  padding: 12px;
-  text-align: right;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  box-shadow: 0px 2px 4px grey;
 
-}
+
 
 div a {
     text-decoration: none;
@@ -351,9 +340,27 @@ div a {
 }
 }
 
+nav {
+  background-color: #0c2720;
+  
+
+}
 
 @media only screen and (max-width:900px){
-
+  nav {
+   
+    padding: 12px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0px 2px 4px grey;
+  
+  }
+  
+ 
   .project-description{
     max-width: 350px;
     margin:auto;
@@ -402,6 +409,19 @@ div a {
   font-size: 16px;
   width: 100px;
   text-align: left;
+}
+
+nav{
+    
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 250px;
+}
+/* Match body padding with nav width */
+body{
+  padding-left: 250px;
 }
 
 }
