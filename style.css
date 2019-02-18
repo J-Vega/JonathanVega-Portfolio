@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+html{
+  background-color: #fffbf3;
+}
 body {
   font: 16px/1.6 Roboto,Helvetica,sans-serif;
   font-weight: 300;
@@ -10,34 +12,47 @@ body {
   line-height: 1.5;
 }
 
+
+
+
 .my-picture{
   border-radius: 50%;
   width: 100px;
 }
 
-header {
-  padding-top: 60px;
+
+
+.section-container{
+  /*margin-left: 281px;*/
+}
+
+.section-header{
+  color: #4b3a4a;
+  text-align: left;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.section-description{
+  color: #4b3a4a;
+  text-align: left;
+  font-size: 18px;
+}
+
+.section-header,.section-description{
+  padding-left: 45px;
 }
 
 .section {
+  margin: auto;
+  margin-top: 25px;
   padding-top: 2%;
   padding-bottom: 2%;
-  max-width: 1000px;
-  margin: auto;
-  
-  background-color: #e5f0bf;
+  max-width: 900px;
+  /*background-color: #e5f0bf;*/
 }
 
-.nav-link{
-  color: white;
-  padding: 15px;
-  display: inline;
-}
 
-.nav-link:hover{
-  cursor: pointer;
-  background-color: #2f616d
-}
 
 .project-list{
   padding: 0;
@@ -55,7 +70,7 @@ header {
   font-weight: bold;
   margin-left: 10px;
   margin-right: 10px;
-  color: #8c2020;
+  color: #e97300;
 }
 
 .project-demo-link:hover , .project-repo-link:hover{
@@ -71,8 +86,9 @@ header {
 
 ul li ul li a {display:block !important;} 
 .active{
-  background-color: #1c4c58 !important;
+  background-color: #252f54e0 !important;
   color: white !important;
+
 }
 
 .child-hover{
@@ -92,7 +108,9 @@ ul li ul li a {display:block !important;}
 }
 
 .font-sized-logo{
-  width: 14px;
+  font-size: 30px;
+  color: black;
+  width: 30px;
 }
 
 .footer-logo{
@@ -124,17 +142,34 @@ ul li ul li a {display:block !important;}
 }
 
 .contact-section a{
+  color: black;
+  font-size: 18px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
 
+.span-email{
+  font-weight: bold;
+}
 
+.contact-list{
+  margin-top: 30px;
+}
 .contact-list ul{
   list-style: none;
+
+}
+
+.email-icon{
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 /* NAV BAR */
 
-nav {
+/*nav {
   background-color: #547b84;
   padding: 12px;
   text-align: right;
@@ -145,7 +180,7 @@ nav {
   z-index: 10;
   box-shadow: 0px 2px 4px grey;
 
-}
+}*/
 
 div a {
     text-decoration: none;
@@ -190,7 +225,8 @@ div a {
 /* TEXT */
 
 .intro{
-  
+  margin: 0;
+  background: #949dc0b8;
   font: 18px/1.6 Roboto,Helvetica,sans-serif;
 }
 
@@ -199,11 +235,11 @@ div a {
 }
 
 .project-screenshot{
-  border: 2px solid black;
+  padding: 2px;
   display: block;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   margin: auto;
-  background: linear-gradient(rgba(255,0,0,0.5), rgba(255,0,0,0.5))
 }
 
 .screenshot-overlay:hover{
@@ -230,7 +266,7 @@ div a {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: white;
+  background-color: #eaeaff;
 }
 
 .overlay-text {
@@ -248,6 +284,20 @@ div a {
 .overlay-text:hover {
   text-decoration: underline;
 }
+
+
+
+.project-title{
+  color: #515f96;
+}
+.project-title:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header-container{
+  /*background-color: rgba(145,13,13,.8);*/
+}
+
 
 .screenshot-overlay{
   opacity: 0;
@@ -269,7 +319,7 @@ div a {
   display: inline-block;
   margin: 5px;
   color: white;
-  background-color: #203c50;
+  background-color: #e97300;
   
   border-radius: 5px;
 }
@@ -320,12 +370,19 @@ div a {
 .left-side{
   border-right: 1px solid #203c50;
 }
+.project-description{
+  text-indent: 50px;
+}
 
 @media only screen and (max-width:550px){
-
+  .occupation{
+    display: none;
+  }
   nav{
     text-align: center;
   }
+
+
 }
 
 @media only screen and (max-width:700px){
@@ -335,14 +392,14 @@ div a {
     margin:auto;
   }
 
-  .contact-list{
+  /*.contact-list{
     padding: 0;
     bottom: 15px;
     width: 100%;
     height: auto;
     top: auto;
     left: 0;
-  }
+  }*/
 
   .contact-list ul li{
     text-align: left;
@@ -398,20 +455,84 @@ div a {
 
 
 @media only screen and (max-width:900px){
+  header {
+    padding-top: 20px;
+  }
+  header{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    content: " ";
+    display: block;
+    width: 100%;
+    background: 
+    /* top color */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.2)
+    ),
+    /* bottom, image */
+    
+    url('https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  /*margin top should be relative to header's height*/
+  main{
+    margin-top: 150px;
+  }
+  .intro{
+    position: fixed;
+    top: 122px;
+    left: 0;
+    right: 0;
+  }
+  .my-picture{
+    position: relative;
+    right: 100px;
+    bottom: 10px;
+    border-radius: 50%;
+    width: 90px;
+  }
+  .contact-list{
+    position: fixed;
+    right: 10px;
+    top: 0px;
+  }
+
+  .nav-link{
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  display: inline;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+  background-color: #949dc0e8;
+  position: relative;
+            bottom: 41px;
+    padding: 2px;
+    border: 1px solid;
+    border-radius: 5px;
+    right: -48px;
+}
+
 
   .project-description{
     max-width: 350px;
     margin:auto;
   }
 
-  .contact-list{
+/*  .contact-list{
     padding: 0;
     bottom: 15px;
     width: 100%;
     height: auto;
     top: auto;
     left: 0;
-  }
+  }*/
 
   .contact-list ul li{
     text-align: left;
@@ -429,13 +550,17 @@ div a {
 
 @media only screen and (min-width:901px){
 
+  main{
+    margin-left: 280px;
+  }
+
+  header {
+    padding-top: 60px;
+  }
   .contact-list{
-    z-index: 1001;
-    position: fixed;
-    left: 20px;/*calc(48% - (220px / 2));*/
-    top: calc(20% - (220px / 2));
-    width: 55px;
-    height: 220px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
   }
 
   .contact-list ul{
@@ -447,5 +572,41 @@ div a {
     width: 100px;
     text-align: left;
   }
+
+  header{
+ 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    content: " ";
+    display: block;
+    width: 240px;
+    background: 
+    /* top, transparent red */ 
+    /*linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),*/
+    /* bottom, image */
+    
+    url('https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  .nav-link{
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  display: block;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+
+.nav-link:hover{
+  cursor: pointer;
+  background-color: #949dc0e8;
+}
 
 }

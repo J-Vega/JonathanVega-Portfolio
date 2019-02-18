@@ -12,36 +12,39 @@
 </head>
 
 <body>
-  <nav role="navigation">
 
-      <ul class="nav-list">
-          <li>
-            <a class="nav-link js-portfolio-link">Portfolio</a>
-            <ul class="project-list">
-              <li><a class="js-budget-browse js-project-link" href="#">Budget Browse</a></li>
-              <li><a class="js-hooisit js-project-link" href="#">HooIsIt</a></li>
-              <li><a class="js-unicart js-project-link" href="#">UniCart</a></li>
-            </ul>
-          </li>
-        </ul>
-    <a class="nav-link js-contact-link">Contact</a>
-    <a class="nav-link js-about-link">About</a>
-    
-  </nav>
-  <main role="main">
+  <div class="header-container">
     <header role="banner">
       <img class="my-picture" src="mypic.png">
+
       <p class="intro">Jonathan Vega</p>
-      <p class="paragraph about-me-paragraph">Nice to meet you! I'm Vega, a Full Stack Web Developer in Atlanta, GA proficient in jQuery, Node.js, MongoDB, React, and more!</p>
+      <p class="intro occupation">Full Stack Web Developer</p>
       <br>
+
+      <a class="nav-link js-portfolio-link">Portfolio</a>
+    <a class="nav-link js-contact-link">Contact</a>
+    <a class="nav-link js-about-link">About</a>
+    <div class="contact-list">
+    
+        <a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
+            <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a>
+        <a href="https://github.com/J-Vega" target="_blank">
+            <img class="github-pic footer-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a>
+            <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
+            <img class="footer-logo email-icon" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a>
+      
+    </div>
     </header>
+  <main role="main">
+    
+  
 
     <div class="section about-section">
       <h3>Hello there, I'm Vega :)</h3>
       <p class=" paragraph about-me-paragraph">
         I am a web developer based out of Atlanta, GA. I graduated from Thinkful’s Full Stack Web Development Bootcamp
         and also have a Bachelor's Degree in Game Design.
-        I love everything about coding... it even gives me a chance to squash nasty bugs!</p><br>
+        I love everything about coding... especially that awesome feeling after getting rid of nasty bugs!</p><br>
       <p class=" paragraph about-me-paragraph">
         A fulfilling day is when I find a solution to a problem, help others, or learn something new!
         I have worked with a large variety of people during my time in the Army and law enforcement, and am always
@@ -73,182 +76,183 @@
       </ul>
     </div>
 
-    <div class="section project-section budget-browse-section">
-      <div class="project-container">
-          <h2>Budget Browse</h2>
-        <div class="row">
-          
-        <div class="col-2 left-side">
-          <div class="project-display-container">
-            <div class="container">
+    <div class="section-container">
+      
+      <div class="section project-section budget-browse-section">
+        <h3 class="section-header">Portfolio</h3>
+      <p class="section-description">Here are my latest projects! All back-end and front-end features were completed entirely by me.</p>
+        <div class="project-container">
             <a href="https://j-vega.github.io/Budget-Browse/" target="_blank">
-              <img class="project-screenshot" src="budgetbrowse.png">
-              <div class="overlay"><div class="overlay-text">Budget Browse</div></div>
+              <h2 class="project-title">Budget Browse</h2>
             </a>
+          <div class="row">
+            
+          <div class="col-2 left-side">
+            <div class="project-display-container">
+              <div class="container">
+              <a href="https://j-vega.github.io/Budget-Browse/" target="_blank">
+                <img class="project-screenshot" src="budgetbrowse.png">
+                <div class="overlay"><div class="overlay-text">Budget Browse</div></div>
+              </a>
+            </div>
           </div>
+
+          <ul class="tech-list">
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML</a>
+            </li>
+            <li>
+              <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/" target="_blank">Vanilla CSS</a>
+            </li>
+          </ul>
+
         </div>
 
-        <ul class="tech-list">
-          <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">HTML</a>
-          </li>
-          <li>
-            <a href="https://www.javascript.com/" target="_blank">JavaScript</a>
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/css/" target="_blank">Vanilla CSS</a>
-          </li>
-        </ul>
-
+        <div class="col-2">
+          <a class="project-repo-link" href="https://github.com/J-Vega/Budget-Browse" target="_blank">Github Repo</a>
+            <a class="project-demo-link" href="https://j-vega.github.io/Budget-Browse/" target="_blank">Live Demo</a>
+              <p class="project-description">
+                Budget Browse allows you to search categorized products
+                within Best Buy's product API while setting a spending limit you set.
+                I was able to learn the differences between JSON and JSONP api's thanks to this project
+                I originally wanted to use Walmart's listings but could not do so... yet!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-2">
-        <a class="project-repo-link" href="https://github.com/J-Vega/Budget-Browse" target="_blank">Github Repo</a>
-          <a class="project-demo-link" href="https://j-vega.github.io/Budget-Browse/" target="_blank">Live Demo</a>
+      <div class="section project-section hooisit-section">
+        <div class="project-container">
+            <h2 class="project-title">HooIsIt</h2>
+          
+          <div class="row">
+            <div class="col-2 left-side">
+              <div class="container">
+                <a href="https://stormy-tundra-36765.herokuapp.com/" target="_blank">
+                  <img class="project-screenshot" src="hooisit.png">
+                  <div class="overlay"><div class="overlay-text">HooIsIt</div></div>
+                </a>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
+                </li>
+                <li>
+                  <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                </li>
+                <li>
+                  <a href="https://expressjs.com/" target="_blank">Express</a>
+                </li>
+                <li>
+                  <a href="https://travis-ci.org" target="_blank">Travis CI</a>
+                </li>
+                <li>
+                  <a href="http://heroku.com" target="_blank">Heroku</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-2">
+               
+            <a class="project-repo-link" href="https://github.com/J-Vega/HooIsIt" target="_blank">GitHub Repo</a>
+            <a class="project-demo-link" href="https://stormy-tundra-36765.herokuapp.com/" target="_blank">Live Demo</a>
+
+
+
             <p class="project-description">
-              Budget Browse allows you to search categorized products
-              within Best Buy's product API while setting a spending limit you set.
-              I was able to learn the differences between JSON and JSONP api's thanks to this project
-              I originally wanted to use Walmart's listings but could not do so... yet!
+              This site allows you to search suspicious phone numbers and allows you to report
+              telemarketers, scammers, and other unwanted phone calls for others to view.
+              I noticed all phone number websites lack any charm or dry humor.
+              To be specific, nobody seemed to take advantage of the "Hoo is calling me" pun
+              so I couldn't resist myself!
             </p>
           </div>
+
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="section project-section hooisit-section">
-      <div class="project-container">
-          <h2>HooIsIt</h2>
-        
-        <div class="row">
-          <div class="col-2 left-side">
-            <div class="container">
-              <a href="https://stormy-tundra-36765.herokuapp.com/" target="_blank">
-                <img class="project-screenshot" src="hooisit.png">
-                <div class="overlay"><div class="overlay-text">HooIsIt</div></div>
-              </a>
+      <div class="section project-section unicart-section">
+        <div class="project-container">
+
+            <h2 class="project-title">Unicart</h2>
+          <div class="row">
+            <div class="col-2 left-side">
+              <div class="container">
+                <a href="https://protected-bayou-31261.herokuapp.com/" target="_blank">
+                  <img class="project-screenshot" src="unicart.png">
+                  <div class="overlay"><div class="overlay-text">Unicart</div></div>
+                </a>
+              </div>
+              <ul class="tech-list">
+                <li>
+                  <a href="https://reactjs.org/" target="_blank">React</a>
+                </li>
+                <li>
+                  <a href="https://redux.js.org/" target="_blank">Redux</a>
+                </li>
+                <li>
+                  <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
+                </li>
+                <li>
+                  <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                </li>
+                <li>
+                  <a href="https://expressjs.com/" target="_blank">Express</a>
+                </li>
+                <li>
+                  <a href="https://travis-ci.org" target="_blank">Travis CI</a>
+                </li>
+                <li>
+                  <a href="http://heroku.com" target="_blank">Heroku</a>
+                </li>
+              </ul>
             </div>
-            <ul class="tech-list">
-              <li>
-                <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
-              </li>
-              <li>
-                <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
-              </li>
-              <li>
-                <a href="https://expressjs.com/" target="_blank">Express</a>
-              </li>
-              <li>
-                <a href="https://travis-ci.org" target="_blank">Travis CI</a>
-              </li>
-              <li>
-                <a href="http://heroku.com" target="_blank">Heroku</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-2">
-             
-          <a class="project-repo-link" href="https://github.com/J-Vega/HooIsIt" target="_blank">GitHub Repo</a>
-          <a class="project-demo-link" href="https://stormy-tundra-36765.herokuapp.com/" target="_blank">Live Demo</a>
 
 
+            <div class="col-2">
+                
+              <a class="project-repo-link" href="https://github.com/J-Vega/wishlist-app-client" target="_blank">GitHub
+                Repo</a>
+              <a class="project-demo-link" href="https://protected-bayou-31261.herokuapp.com/" target="_blank">Live Demo</a>
 
-          <p class="project-description">
-            This site allows you to search suspicious phone numbers and allows you to report
-            telemarketers, scammers, and other unwanted phone calls for others to view.
-            I noticed all phone number websites lack any charm or dry humor.
-            To be specific, nobody seemed to take advantage of the "Hoo is calling me" pun
-            so I couldn't resist myself!
-          </p>
-        </div>
 
-        </div>
-      </div>
-    </div>
-
-    <div class="section project-section unicart-section">
-      <div class="project-container">
-
-          <h2>Unicart</h2>
-        <div class="row">
-          <div class="col-2 left-side">
-            <div class="container">
-              <a href="https://protected-bayou-31261.herokuapp.com/" target="_blank">
-                <img class="project-screenshot" src="unicart.png">
-                <div class="overlay"><div class="overlay-text">Unicart</div></div>
-              </a>
+              <p class="project-description">Find product listings across multiple retailers to create and manage
+                wishlists in
+                one place. I created this project because I found it inconvenient to manage a wishlist for each website.
+                This app helps that problem, especially for heavy shoppers!
+              </p>
             </div>
-            <ul class="tech-list">
-              <li>
-                <a href="https://reactjs.org/" target="_blank">React</a>
-              </li>
-              <li>
-                <a href="https://redux.js.org/" target="_blank">Redux</a>
-              </li>
-              <li>
-                <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
-              </li>
-              <li>
-                <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
-              </li>
-              <li>
-                <a href="https://expressjs.com/" target="_blank">Express</a>
-              </li>
-              <li>
-                <a href="https://travis-ci.org" target="_blank">Travis CI</a>
-              </li>
-              <li>
-                <a href="http://heroku.com" target="_blank">Heroku</a>
-              </li>
-            </ul>
-          </div>
-
-
-          <div class="col-2">
-              
-            <a class="project-repo-link" href="https://github.com/J-Vega/wishlist-app-client" target="_blank">GitHub
-              Repo</a>
-            <a class="project-demo-link" href="https://protected-bayou-31261.herokuapp.com/" target="_blank">Live Demo</a>
-
-
-            <p class="project-description">Find product listings across multiple retailers to create and manage
-              wishlists in
-              one place. I created this project because I found it inconvenient to manage a wishlist for each website.
-              This app helps that problem, especially for heavy shoppers!
-            </p>
           </div>
         </div>
       </div>
     </div>
+    <!-- END PROJECTS SECTION -->
 
     <section class="section contact-section">
       <h4>Let's Connect!</h4>
       <p class="paragraph contact-paragraph">If you'd like to get in touch, or talk about a project or any other
-        inquiries, email me at jonathan_d_vega@yahoo.com</p>
+        inquiries, email me at <a href="mailto:Jonathan_D_Vega@yahoo.com" class="span-email">jonathan_d_vega@yahoo.com</a></p>
       <p>You can also connect via LinkedIn or GitHub!</p>
       <a href="https://github.com/J-Vega" target="_blank">
-        <img class="font-sized-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
-        GitHub</a>
+          <img class="font-sized-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
+          <p>GitHub</p>
+      </a>
       <a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
         <img class="font-sized-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png">
-        LinkedIn</a>
+        <p>LinkedIn</p>
+      </a>
       <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
         <a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
-          <img class="font-sized-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"> Email</a>
+          <img class="font-sized-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"> 
+          <p>Email</p>
+        </a>
     </section>
 
-
-    <div class="contact-list">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/jonathan-vega/" target="_blank">
-            <img class="footer-logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"></a></li>
-        <li><a href="mailto:Jonathan_D_Vega@yahoo.com" target="_top">
-            <img class="footer-logo" src="https://image.flaticon.com/icons/svg/34/34039.svg"></a></li>
-        <li><a href="https://github.com/J-Vega" target="_blank">
-            <img class="github-pic footer-logo" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a></li>
-      </ul>
-    </div>
 
   </main>
 
