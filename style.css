@@ -238,7 +238,7 @@ div a {
   padding: 2px;
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   margin: auto;
 }
 
@@ -248,7 +248,7 @@ div a {
 
 .container {
   position: relative;
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
