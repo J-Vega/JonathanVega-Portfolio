@@ -110,7 +110,7 @@ ul li ul li a {display:block !important;}
 .font-sized-logo{
   font-size: 30px;
   color: black;
-  width: 30px;
+  width: 40px;
 }
 
 .footer-logo{
@@ -147,10 +147,12 @@ ul li ul li a {display:block !important;}
   font-size: 18px;
   padding-bottom: 10px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .span-email{
   font-weight: bold;
+  display: block !important;
 }
 
 .contact-list{
@@ -552,7 +554,7 @@ div a {
 @media only screen and (min-width:901px){
 
   main{
-    margin-left: 280px;
+    margin-left: 240px;
   }
 
   header {
@@ -575,7 +577,6 @@ div a {
   }
 
   header{
- 
     position: fixed;
     top: 0;
     bottom: 0;
@@ -583,16 +584,10 @@ div a {
     right: auto;
     content: " ";
     display: block;
-    width: 240px;
+    width: 300px;
     background: 
-    /* top, transparent red */ 
-    /*linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 0, 0, 0.45)
-    ),*/
-    /* bottom, image */
-    
-    url('https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg') top center no-repeat;
+      url('https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg') 
+      top center no-repeat;
     background-size: cover;
   }
 
@@ -603,6 +598,7 @@ div a {
   display: block;
   -webkit-transition: 0.5s; /* Safari */
   transition: 0.5s;
+  background-color: #464646ab;
 }
 
 .nav-link:hover{
