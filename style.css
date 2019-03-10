@@ -20,12 +20,6 @@ body {
   width: 100px;
 }
 
-
-
-.section-container{
-  /*margin-left: 281px;*/
-}
-
 .section-header{
   color: #4b3a4a;
   text-align: left;
@@ -169,21 +163,6 @@ ul li ul li a {display:block !important;}
     border-radius: 5px;
     border: 1px solid black;
 }
-
-/* NAV BAR */
-
-/*nav {
-  background-color: #547b84;
-  padding: 12px;
-  text-align: right;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  box-shadow: 0px 2px 4px grey;
-
-}*/
 
 div a {
     text-decoration: none;
