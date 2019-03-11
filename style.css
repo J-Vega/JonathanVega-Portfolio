@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 html{
+  font: 16px/1.6 Montseratt,sans-serif !important;
   background-color: #fffbf3;
 }
 body {
-  font: 16px/1.6 Roboto,Helvetica,sans-serif;
+  font: 20px/1.6 Montseratt,Roboto,Helvetica,sans-serif;
   font-weight: 300;
   color: rgb(51, 51, 51);
   text-align: center;
@@ -28,9 +29,10 @@ body {
 }
 
 .section-description{
+  font: 20px/1.6 Montseratt,sans-serif !important;
   color: #4b3a4a;
   text-align: left;
-  font-size: 18px;
+
 }
 
 .section-header,.section-description{
@@ -144,6 +146,10 @@ ul li ul li a {display:block !important;}
   display: inline-block;
 }
 
+.contact-container a{
+  margin-left: 30px;
+}
+
 .span-email{
   font-weight: bold;
   display: block !important;
@@ -209,7 +215,7 @@ div a {
 .intro{
   margin: 0;
   background: #949dc0b8;
-  font: 18px/1.6 Roboto,Helvetica,sans-serif;
+  font: 20px/1.6 Montseratt,Roboto,Helvetica,sans-serif;
 }
 
 .project-section{
@@ -270,6 +276,7 @@ div a {
 
 
 .project-title{
+  font-size: 28px;
   color: #515f96;
 }
 .project-title:hover{
@@ -308,6 +315,7 @@ div a {
 .tech-list li a{
   color: white;
   padding: 5px;
+  font: 16px/1.6 Montseratt,sans-serif !important;
 }
 .tech-list li a:hover{
   text-decoration: underline;
@@ -354,6 +362,7 @@ div a {
 }
 .project-description{
   text-indent: 50px;
+  font: 16px/1.6 Montseratt,sans-serif !important;
 }
 
 @media only screen and (max-width:550px){
@@ -372,6 +381,10 @@ div a {
   .project-description{
     max-width: 450px;
     margin:auto;
+  }
+
+  .occupation{
+    display: none;
   }
 
   /*.contact-list{
@@ -414,6 +427,9 @@ div a {
 
 
 @media only screen and (min-width:701px){
+  .occupation{
+    display: none;
+  }
   .project-description{
     text-align: left;
     margin-left: 30px;
@@ -437,16 +453,15 @@ div a {
 
 
 @media only screen and (max-width:900px){
-  header {
-    padding-top: 20px;
-  }
+
   header{
     z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 150px;
+    height: 154px;
+    padding-top: 20px;
     content: " ";
     display: block;
     width: 100%;
@@ -473,8 +488,9 @@ div a {
     right: 0;
   }
   .my-picture{
+    float: left;
+    margin-left: 12px;
     position: relative;
-    right: 100px;
     bottom: 10px;
     border-radius: 50%;
     width: 90px;
@@ -486,19 +502,21 @@ div a {
   }
 
   .nav-link{
-  font-size: 18px;
-  color: white;
-  padding: 15px;
-  display: inline;
-  -webkit-transition: 0.5s; /* Safari */
-  transition: 0.5s;
-  background-color: #949dc0e8;
-  position: relative;
-            bottom: 41px;
+    clear: left;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    display: inline;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #949dc0e8;
+    position: relative;
+    float: right;
+    margin-right: 11px;
+    bottom: 36px;
     padding: 2px;
     border: 1px solid;
     border-radius: 5px;
-    right: -48px;
 }
 
 
@@ -536,9 +554,6 @@ div a {
     margin-left: 240px;
   }
 
-  header {
-    padding-top: 60px;
-  }
   .contact-list{
     z-index: 10;
     display: flex;
@@ -554,8 +569,11 @@ div a {
     width: 100px;
     text-align: left;
   }
-
+  .occupation{
+    display: block;
+  }
   header{
+    padding-top: 60px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -563,7 +581,7 @@ div a {
     right: auto;
     content: " ";
     display: block;
-    width: 300px;
+    width: 260px;
     background: 
       url('https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg') 
       top center no-repeat;
